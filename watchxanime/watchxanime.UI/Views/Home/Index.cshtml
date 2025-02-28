@@ -1,0 +1,105 @@
+﻿
+
+@{
+    ViewData["Title"] = "Home Page";
+    Layout = "~/Views/UILayout/Layout.cshtml";
+}
+<div class="max-w-7xl mx-auto px-2 sm:px-4 py-4 sm:py-8">
+    <!-- Son Eklenenler -->
+    <section class="mb-6 sm:mb-8">
+        <div class="flex justify-between items-center mb-3 sm:mb-4">
+            <h2 class="text-lg sm:text-xl font-semibold text-red-500 pb-1 border-b-2 border-red-500/20">Son Eklenenler</h2>
+            <a href="#" class="text-xs sm:text-sm text-gray-400 hover:text-red-500 transition duration-300">Tümünü Gör</a>
+        </div>
+        <div class="grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2 sm:gap-3">
+
+            <!-- Anime Card -->
+            @await Component.InvokeAsync("_AnimeComponent")
+
+            <!-- Benzer kartlar -->
+            <div class="group relative">
+                <div class="aspect-[2/3] overflow-hidden rounded-lg">
+                    <img src="https://cdn.myanimelist.net/images/anime/1801/142390.jpg" alt="Anime"
+                         class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
+                    <!-- IMDB Puanı -->
+                    <div class="absolute top-1 sm:top-2 left-1 sm:left-2 bg-black/80 px-1.5 sm:px-2 py-0.5 sm:py-1 rounded text-[10px] sm:text-xs font-medium">
+                        <i class="fas fa-star text-red-500 mr-1"></i>9.1
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-0 p-1.5 sm:p-2 w-full">
+                            <div class="text-[10px] sm:text-xs font-medium">Bölüm 8</div>
+                            <div class="text-[8px] sm:text-xs text-gray-300">2 saat önce</div>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="mt-1 text-[11px] sm:text-xs font-medium truncate">Solo Leveling</h3>
+                <p class="text-[9px] sm:text-[10px] text-gray-400">TV Serisi</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popüler Animeler -->
+    <section class="mb-6 sm:mb-8">
+        <div class="flex justify-between items-center mb-3 sm:mb-4">
+            <h2 class="text-lg sm:text-xl font-semibold text-red-500 pb-1 border-b-2 border-red-500/20">Popüler Animeler</h2>
+            <a href="#" class="text-xs sm:text-sm text-gray-400 hover:text-red-500 transition duration-300">Tümünü Gör</a>
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 sm:gap-4">
+            <div class="group relative">
+                <div class="aspect-[2/3] overflow-hidden rounded-lg">
+                    <img src="https://cdn.myanimelist.net/images/anime/1792/138022l.jpg" alt="Anime" 
+                         class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-0 p-1.5 sm:p-3 w-full">
+                            <div class="text-[10px] sm:text-sm font-medium">9.2 / 10</div>
+                            <div class="text-[8px] sm:text-xs text-gray-300">125K görüntülenme</div>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="mt-1 sm:mt-2 text-[11px] sm:text-sm font-medium truncate">Demon Slayer: Hashira Training Arc</h3>
+                <p class="text-[9px] sm:text-xs text-gray-400">TV Serisi</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tamamlanan Animeler -->
+    <section class="mb-6 sm:mb-8">
+        <div class="flex justify-between items-center mb-3 sm:mb-4">
+            <h2 class="text-lg sm:text-xl font-semibold text-red-500 pb-1 border-b-2 border-red-500/20">Tamamlanan Animeler</h2>
+            <a href="#" class="text-xs sm:text-sm text-gray-400 hover:text-red-500 transition duration-300">Tümünü Gör</a>
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 sm:gap-4">
+            <div class="group relative">
+                <div class="aspect-[2/3] overflow-hidden rounded-lg">
+                    <img src="https://cdn.myanimelist.net/images/anime/1015/138006l.jpg" alt="Anime" 
+                         class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-0 p-1.5 sm:p-3 w-full">
+                            <div class="text-[10px] sm:text-sm font-medium">24 Bölüm</div>
+                            <div class="text-[8px] sm:text-xs text-gray-300">Tamamlandı</div>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="mt-1 sm:mt-2 text-[11px] sm:text-sm font-medium truncate">Frieren: Beyond Journey's End</h3>
+                <p class="text-[9px] sm:text-xs text-gray-400">TV Serisi</p>
+            </div>
+        </div>
+    </section>
+</div>
+
+<script type="text/javascript">
+    let timeout;
+
+    function resetTimer() {
+        clearTimeout(timeout);
+        timeout = setTimeout(function () {
+            window.location.reload();
+        }, 300000); // 60 saniye = 60000 ms 
+    }
+
+    window.onload = resetTimer;
+    document.onmousemove = resetTimer; 
+    document.onkeypress = resetTimer; 
+    document.onclick = resetTimer;
+    document.onscroll = resetTimer; 
+</script>

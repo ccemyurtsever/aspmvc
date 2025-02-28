@@ -1,0 +1,64 @@
+﻿@model UpdateAnimeDTO
+@{
+    ViewData["Title"] = "Update Anime";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="p-4">
+    <div class="bg-[#1a1a1a] border border-red-900/30 rounded-lg">
+        <div class="border-b border-red-900/30 px-6 py-4">
+            <h6 class="text-sm font-bold text-gray-100">Update Anime</h6>
+        </div>
+        <div class="p-6">
+            <form method="post">
+                <input type="hidden" asp-for="animeId" />
+                
+                <div class="mb-4">
+                    <label class="block text-[11px] font-bold text-gray-100 mb-2">Anime Name</label>
+                    <input asp-for="animeName" class="w-full bg-[#0f0f0f] border border-red-900/50 rounded-md px-2.5 py-1.5 text-[11px] text-gray-100 focus:outline-none focus:border-red-500" required />
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                    <div>
+                        <label class="block text-[11px] font-bold text-gray-100 mb-2">Season</label>
+                        <input type="number" asp-for="animeSeason" class="w-full bg-[#0f0f0f] border border-red-900/50 rounded-md px-2.5 py-1.5 text-[11px] text-gray-100 focus:outline-none focus:border-red-500" required />
+                    </div>
+                    <div>
+                        <label class="block text-[11px] font-bold text-gray-100 mb-2">Episode Count</label>
+                        <input type="number" asp-for="animeEpisode" class="w-full bg-[#0f0f0f] border border-red-900/50 rounded-md px-2.5 py-1.5 text-[11px] text-gray-100 focus:outline-none focus:border-red-500" required />
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <label class="block text-[11px] font-bold text-gray-100 mb-2">Description</label>
+                    <textarea asp-for="animeDescription" class="w-full bg-[#0f0f0f] border border-red-900/50 rounded-md px-2.5 py-1.5 text-[11px] text-gray-100 focus:outline-none focus:border-red-500" rows="3" required></textarea>
+                </div>
+
+                <div class="mb-4">
+                    <label class="block text-[11px] font-bold text-gray-100 mb-2">Anime URL</label>
+                    <input asp-for="animeUrl" class="w-full bg-[#0f0f0f] border border-red-900/50 rounded-md px-2.5 py-1.5 text-[11px] text-gray-100 focus:outline-none focus:border-red-500" required />
+                </div>
+
+                <div class="mb-4">
+                    <label class="block text-[11px] font-bold text-gray-100 mb-2">Image URL</label>
+                    <input asp-for="animeImage" class="w-full bg-[#0f0f0f] border border-red-900/50 rounded-md px-2.5 py-1.5 text-[11px] text-gray-100 focus:outline-none focus:border-red-500" required />
+                </div>
+
+                <div class="mb-4">
+                    <label class="block text-[11px] font-bold text-gray-100 mb-2">IMDB Rating</label>
+                    <input type="number" asp-for="IMDB" class="w-full bg-[#0f0f0f] border border-red-900/50 rounded-md px-2.5 py-1.5 text-[11px] text-gray-100 focus:outline-none focus:border-red-500" required />
+                </div>
+
+                <div class="flex gap-2">
+                    <button type="submit" class="px-4 py-1.5 bg-red-500 hover:bg-red-600 text-[11px] text-white rounded-md transition-colors duration-200">
+                        Update
+                    </button>
+                    <a asp-action="Index" class="px-4 py-1.5 bg-[#0f0f0f] hover:bg-gray-900 text-[11px] text-gray-100 rounded-md transition-colors duration-200 border border-red-900/30">
+                        Cancel
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+

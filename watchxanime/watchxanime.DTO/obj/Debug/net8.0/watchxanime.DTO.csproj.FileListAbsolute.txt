@@ -1,0 +1,45 @@
+C:\Users\C\Desktop\watchxanime\watchxanime\watchxanime.DTO\bin\Debug\net8.0\watchxanime.DTO.deps.json
+C:\Users\C\Desktop\watchxanime\watchxanime\watchxanime.DTO\bin\Debug\net8.0\watchxanime.DTO.dll
+C:\Users\C\Desktop\watchxanime\watchxanime\watchxanime.DTO\bin\Debug\net8.0\watchxanime.DTO.pdb
+C:\Users\C\Desktop\watchxanime\watchxanime\watchxanime.DTO\bin\Debug\net8.0\watchxanime.Entity.dll
+C:\Users\C\Desktop\watchxanime\watchxanime\watchxanime.DTO\bin\Debug\net8.0\watchxanime.Entity.pdb
+C:\Users\C\Desktop\watchxanime\watchxanime\watchxanime.DTO\obj\Debug\net8.0\watchxanime.DTO.csproj.AssemblyReference.cache
+C:\Users\C\Desktop\watchxanime\watchxanime\watchxanime.DTO\obj\Debug\net8.0\watchxanime.DTO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\C\Desktop\watchxanime\watchxanime\watchxanime.DTO\obj\Debug\net8.0\watchxanime.DTO.AssemblyInfoInputs.cache
+C:\Users\C\Desktop\watchxanime\watchxanime\watchxanime.DTO\obj\Debug\net8.0\watchxanime.DTO.AssemblyInfo.cs
+C:\Users\C\Desktop\watchxanime\watchxanime\watchxanime.DTO\obj\Debug\net8.0\watchxanime.DTO.csproj.CoreCompileInputs.cache
+C:\Users\C\Desktop\watchxanime\watchxanime\watchxanime.DTO\obj\Debug\net8.0\watchxan.0DE15397.Up2Date
+C:\Users\C\Desktop\watchxanime\watchxanime\watchxanime.DTO\obj\Debug\net8.0\watchxanime.DTO.dll
+C:\Users\C\Desktop\watchxanime\watchxanime\watchxanime.DTO\obj\Debug\net8.0\refint\watchxanime.DTO.dll
+C:\Users\C\Desktop\watchxanime\watchxanime\watchxanime.DTO\obj\Debug\net8.0\watchxanime.DTO.pdb
+C:\Users\C\Desktop\watchxanime\watchxanime\watchxanime.DTO\obj\Debug\net8.0\ref\watchxanime.DTO.dll
+C:\Users\C\Desktop\watchxanime\Web\watchxanime\watchxanime.DTO\bin\Debug\net8.0\watchxanime.DTO.deps.json
+C:\Users\C\Desktop\watchxanime\Web\watchxanime\watchxanime.DTO\bin\Debug\net8.0\watchxanime.DTO.dll
+C:\Users\C\Desktop\watchxanime\Web\watchxanime\watchxanime.DTO\bin\Debug\net8.0\watchxanime.DTO.pdb
+C:\Users\C\Desktop\watchxanime\Web\watchxanime\watchxanime.DTO\bin\Debug\net8.0\watchxanime.Entity.dll
+C:\Users\C\Desktop\watchxanime\Web\watchxanime\watchxanime.DTO\bin\Debug\net8.0\watchxanime.Entity.pdb
+C:\Users\C\Desktop\watchxanime\Web\watchxanime\watchxanime.DTO\obj\Debug\net8.0\watchxanime.DTO.csproj.AssemblyReference.cache
+C:\Users\C\Desktop\watchxanime\Web\watchxanime\watchxanime.DTO\obj\Debug\net8.0\watchxanime.DTO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\C\Desktop\watchxanime\Web\watchxanime\watchxanime.DTO\obj\Debug\net8.0\watchxanime.DTO.AssemblyInfoInputs.cache
+C:\Users\C\Desktop\watchxanime\Web\watchxanime\watchxanime.DTO\obj\Debug\net8.0\watchxanime.DTO.AssemblyInfo.cs
+C:\Users\C\Desktop\watchxanime\Web\watchxanime\watchxanime.DTO\obj\Debug\net8.0\watchxanime.DTO.csproj.CoreCompileInputs.cache
+C:\Users\C\Desktop\watchxanime\Web\watchxanime\watchxanime.DTO\obj\Debug\net8.0\watchxan.0DE15397.Up2Date
+C:\Users\C\Desktop\watchxanime\Web\watchxanime\watchxanime.DTO\obj\Debug\net8.0\watchxanime.DTO.dll
+C:\Users\C\Desktop\watchxanime\Web\watchxanime\watchxanime.DTO\obj\Debug\net8.0\refint\watchxanime.DTO.dll
+C:\Users\C\Desktop\watchxanime\Web\watchxanime\watchxanime.DTO\obj\Debug\net8.0\watchxanime.DTO.pdb
+C:\Users\C\Desktop\watchxanime\Web\watchxanime\watchxanime.DTO\obj\Debug\net8.0\ref\watchxanime.DTO.dll
+C:\Users\C\Desktop\watchxanime - Copy (2) yrs login\Web\watchxanime\watchxanime.DTO\bin\Debug\net8.0\watchxanime.DTO.deps.json
+C:\Users\C\Desktop\watchxanime - Copy (2) yrs login\Web\watchxanime\watchxanime.DTO\bin\Debug\net8.0\watchxanime.DTO.dll
+C:\Users\C\Desktop\watchxanime - Copy (2) yrs login\Web\watchxanime\watchxanime.DTO\bin\Debug\net8.0\watchxanime.DTO.pdb
+C:\Users\C\Desktop\watchxanime - Copy (2) yrs login\Web\watchxanime\watchxanime.DTO\bin\Debug\net8.0\watchxanime.Entity.dll
+C:\Users\C\Desktop\watchxanime - Copy (2) yrs login\Web\watchxanime\watchxanime.DTO\bin\Debug\net8.0\watchxanime.Entity.pdb
+C:\Users\C\Desktop\watchxanime - Copy (2) yrs login\Web\watchxanime\watchxanime.DTO\obj\Debug\net8.0\watchxanime.DTO.csproj.AssemblyReference.cache
+C:\Users\C\Desktop\watchxanime - Copy (2) yrs login\Web\watchxanime\watchxanime.DTO\obj\Debug\net8.0\watchxanime.DTO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\C\Desktop\watchxanime - Copy (2) yrs login\Web\watchxanime\watchxanime.DTO\obj\Debug\net8.0\watchxanime.DTO.AssemblyInfoInputs.cache
+C:\Users\C\Desktop\watchxanime - Copy (2) yrs login\Web\watchxanime\watchxanime.DTO\obj\Debug\net8.0\watchxanime.DTO.AssemblyInfo.cs
+C:\Users\C\Desktop\watchxanime - Copy (2) yrs login\Web\watchxanime\watchxanime.DTO\obj\Debug\net8.0\watchxanime.DTO.csproj.CoreCompileInputs.cache
+C:\Users\C\Desktop\watchxanime - Copy (2) yrs login\Web\watchxanime\watchxanime.DTO\obj\Debug\net8.0\watchxan.0DE15397.Up2Date
+C:\Users\C\Desktop\watchxanime - Copy (2) yrs login\Web\watchxanime\watchxanime.DTO\obj\Debug\net8.0\watchxanime.DTO.dll
+C:\Users\C\Desktop\watchxanime - Copy (2) yrs login\Web\watchxanime\watchxanime.DTO\obj\Debug\net8.0\refint\watchxanime.DTO.dll
+C:\Users\C\Desktop\watchxanime - Copy (2) yrs login\Web\watchxanime\watchxanime.DTO\obj\Debug\net8.0\watchxanime.DTO.pdb
+C:\Users\C\Desktop\watchxanime - Copy (2) yrs login\Web\watchxanime\watchxanime.DTO\obj\Debug\net8.0\ref\watchxanime.DTO.dll

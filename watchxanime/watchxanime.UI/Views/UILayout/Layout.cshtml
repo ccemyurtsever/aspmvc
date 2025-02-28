@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WatchXanime</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #0a0a0a;
+    }
+    .nav-gradient {
+      background: linear-gradient(to bottom, #111111, #0f0f0f);
+    }
+    .modal-backdrop {
+      background-color: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(4px);
+    }
+  </style>
+</head>
+<body class="bg-[#0a0a0a] text-white min-h-screen">
+  <!-- Bildirim alanı -->
+  <div id="notificationArea" class="fixed rounded bottom-4 right-4 z-50 hidden">
+    <div class="rounded shadow-lg p-4 min-w-[300px]">
+      <div id="notificationMessage"></div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  @await Html.PartialAsync("Partials/_Navbar.cshtml") <!--sttaic html componenetlerini eklemek iicn kullanilir.-->
+
+  <!-- Header -->
+  @await Html.PartialAsync("Partials/_Header.cshtml")
+
+  <!-- Main Content -->
+  <main class="flex-grow">
+      @RenderBody()
+  </main>
+
+  <!-- Footer -->
+  @await Html.PartialAsync("Partials/_Footer.cshtml")
+
+  <!-- Login Modal -->
+  @await Html.PartialAsync("Partials/_Login.cshtml")
+
+  <!-- Register Modal -->
+  @await Html.PartialAsync("Partials/_Register.cshtml")
+
+  @await Html.PartialAsync("Partials/_ForgotPassword.cshtml")
+
+
+  <!-- Takvim Popup -->
+  <div id="calendarPopup" class="hidden fixed inset-0 z-50">
+    <div class="modal-backdrop absolute inset-0"></div>
+    <div class="fixed inset-0 flex items-center justify-center p-4">
+        <div class="bg-[#1a1a1a] w-full max-w-7xl h-[90vh] rounded-lg shadow-xl border border-red-900/30 relative">
+            <button onclick="toggleCalendar()" class="absolute right-6 top-6 text-gray-400 hover:text-red-500 text-xl">
+                <i class="fas fa-times"></i>
+            </button>
+            
+            <!-- Takvim İçeriği -->
+            <div class="p-8 mr-12">
+                <!-- Başlık ve Ay Seçimi -->
+                <div class="flex justify-between items-center mb-8">
+                    <div class="flex items-center space-x-4">
+                        <h2 class="text-2xl font-semibold text-red-500">Anime Takvimi</h2>
+                        <span class="px-3 py-1 text-xs bg-red-500/10 text-red-400 rounded-full">28 Yeni Bölüm</span>
+                    </div>
+                    <div class="flex items-center bg-[#111] rounded-lg p-1">
+                        <button class="text-gray-400 hover:text-red-500 p-2 transition-colors">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <div class="px-4 flex items-center space-x-2">
+                            <span class="text-lg text-gray-200 font-medium">Mart</span>
+                            <span class="text-sm text-gray-400">2024</span>
+                        </div>
+                        <button class="text-gray-400 hover:text-red-500 p-2 transition-colors">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Haftanın Günleri -->
+                <div class="grid grid-cols-7 gap-3 mb-3 text-center">
+                    <div class="text-gray-400 text-sm font-medium py-2 bg-[#111] rounded-lg">Pazartesi</div>
+                    <div class="text-gray-400 text-sm font-medium py-2 bg-[#111] rounded-lg">Salı</div>
+                    <div class="text-gray-400 text-sm font-medium py-2 bg-[#111] rounded-lg">Çarşamba</div>
+                    <div class="text-gray-400 text-sm font-medium py-2 bg-[#111] rounded-lg">Perşembe</div>
+                    <div class="text-gray-400 text-sm font-medium py-2 bg-[#111] rounded-lg">Cuma</div>
+                    <div class="text-red-400 text-sm font-medium py-2 bg-[#111] rounded-lg">Cumartesi</div>
+                    <div class="text-red-400 text-sm font-medium py-2 bg-[#111] rounded-lg">Pazar</div>
+                </div>
+
+                <!-- Takvim Günleri -->
+                <div class="grid grid-cols-7 gap-3 h-[calc(90vh-280px)] overflow-y-auto pr-2 custom-scrollbar">
+                    <!-- Boş günler -->
+                    <div class="h-36 border border-red-900/10 rounded-lg bg-[#111111] p-3 group hover:h-auto transition-all duration-300">
+                        <div class="flex items-center justify-between">
+                            <span class="text-gray-300 font-medium">29</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Anime olan günler -->
+                    <div class="min-h-[9rem] border border-red-900/10 rounded-lg bg-[#111111] p-3 hover:border-red-500/50 transition-all cursor-pointer group hover:min-h-[15rem] hover:absolute hover:w-[calc(100%-0.75rem)] hover:z-10 hover:shadow-lg hover:shadow-red-500/5">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-gray-300 font-medium">1</span>
+                            <span class="text-xs px-2 py-0.5 bg-red-500/10 text-red-400 rounded-full">6 Anime</span>
+                        </div>
+                        <div class="space-y-2.5 group-hover:overflow-y-auto group-hover:max-h-[12rem] custom-scrollbar">
+                            <div class="flex items-center space-x-2 group/item hover:bg-black/30 p-1 rounded transition-colors">
+                                <span class="w-2 h-2 rounded-full bg-red-500"></span>
+                                <div class="flex-1 min-w-0">
+                                    <div class="text-sm text-gray-300 truncate group-hover:text-red-500">Jujutsu Kaisen</div>
+                                    <div class="text-xs text-gray-500">EP 23 • 23:00</div>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-2 group/item hover:bg-black/30 p-1 rounded transition-colors">
+                                <span class="w-2 h-2 rounded-full bg-blue-500"></span>
+                                <div class="flex-1 min-w-0">
+                                    <div class="text-sm text-gray-300 truncate group-hover:text-red-500">Solo Leveling</div>
+                                    <div class="text-xs text-gray-500">EP 12 • 22:30</div>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-2 group/item hover:bg-black/30 p-1 rounded transition-colors">
+                                <span class="w-2 h-2 rounded-full bg-green-500"></span>
+                                <div class="flex-1 min-w-0">
+                                    <div class="text-sm text-gray-300 truncate group-hover:text-red-500">Demon Slayer</div>
+                                    <div class="text-xs text-gray-500">EP 1 • 21:00</div>
+                                </div>
+                            </div>
+                            <!-- Daha fazla anime -->
+                            <div class="flex items-center space-x-2 group/item hover:bg-black/30 p-1 rounded transition-colors">
+                                <span class="w-2 h-2 rounded-full bg-red-500"></span>
+                                <div class="flex-1 min-w-0">
+                                    <div class="text-sm text-gray-300 truncate group-hover:text-red-500">One Piece</div>
+                                    <div class="text-xs text-gray-500">EP 1098 • 20:00</div>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-2 group/item hover:bg-black/30 p-1 rounded transition-colors">
+                                <span class="w-2 h-2 rounded-full bg-blue-500"></span>
+                                <div class="flex-1 min-w-0">
+                                    <div class="text-sm text-gray-300 truncate group-hover:text-red-500">Black Clover</div>
+                                    <div class="text-xs text-gray-500">EP 15 • 19:30</div>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-2 group/item hover:bg-black/30 p-1 rounded transition-colors">
+                                <span class="w-2 h-2 rounded-full bg-green-500"></span>
+                                <div class="flex-1 min-w-0">
+                                    <div class="text-sm text-gray-300 truncate group-hover:text-red-500">Naruto</div>
+                                    <div class="text-xs text-gray-500">EP 220 • 18:00</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Alt Bilgi ve Filtreler -->
+                <div class="mt-8 flex items-center justify-between bg-[#111] rounded-lg p-4">
+                    <div class="flex items-center space-x-4">
+                        <span class="text-gray-400 text-sm">Filtrele:</span>
+                        <div class="flex space-x-2">
+                            <button class="px-4 py-1.5 text-sm bg-red-500/10 text-red-400 rounded-full hover:bg-red-500/20 font-medium transition-colors">
+                                Tümü
+                            </button>
+                            <button class="px-4 py-1.5 text-sm border border-red-900/20 text-gray-400 rounded-full hover:bg-red-500/10 hover:text-red-400 font-medium transition-colors">
+                                Yeni Bölümler
+                            </button>
+                            <button class="px-4 py-1.5 text-sm border border-red-900/20 text-gray-400 rounded-full hover:bg-red-500/10 hover:text-red-400 font-medium transition-colors">
+                                Yeni Animeler
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Renk Açıklamaları -->
+                    <div class="flex items-center space-x-6">
+                        <div class="flex items-center space-x-2">
+                            <span class="w-2.5 h-2.5 rounded-full bg-red-500"></span>
+                            <span class="text-sm text-gray-400">Yeni Bölüm</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <span class="w-2.5 h-2.5 rounded-full bg-blue-500"></span>
+                            <span class="text-sm text-gray-400">Sezon Finali</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <span class="w-2.5 h-2.5 rounded-full bg-green-500"></span>
+                            <span class="text-sm text-gray-400">Sezon Başlangıcı</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script>
+    function toggleUserMenu() {
+      const menu = document.getElementById('userMenu');
+      menu.classList.toggle('hidden');
+      
+      // Close menu when clicking outside
+      document.addEventListener('click', function closeMenu(e) {
+        if (!menu.contains(e.target) && !e.target.closest('button')) {
+          menu.classList.add('hidden');
+          document.removeEventListener('click', closeMenu);
+        }
+      });
+    }
+
+    function openModal(modalId) {
+      document.getElementById(modalId).classList.remove('hidden');
+      document.getElementById('userMenu').classList.add('hidden');
+    }
+
+    function closeModal(modalId) {
+      document.getElementById(modalId).classList.add('hidden');
+    }
+
+    function switchModal(closeModalId, openModalId) {
+      closeModal(closeModalId);
+      openModal(openModalId);
+    }
+
+    // Update user menu links to open modals
+    document.addEventListener('DOMContentLoaded', function() {
+      const loginLink = document.querySelector('#userMenu a:nth-child(1)');
+      const registerLink = document.querySelector('#userMenu a:nth-child(2)');
+      const forgotPasswordLink = document.querySelector('#userMenu a:nth-child(3)');
+      
+      loginLink.onclick = function(e) {
+        e.preventDefault();
+        openModal('loginModal');
+      }
+      
+      registerLink.onclick = function(e) {
+        e.preventDefault();
+        openModal('registerModal');
+      }
+      forgotPasswordLink.onclick = function(e) {
+        e.preventDefault();
+        openModal('forgotPasswordModal');
+      }
+    });
+
+    function toggleCalendar() {
+      const popup = document.getElementById('calendarPopup');
+      if (popup.classList.contains('hidden')) {
+        popup.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+      } else {
+        popup.classList.add('hidden');
+        document.body.style.overflow = 'auto';
+      }
+    }
+    
+    // Popup dışına tıklandığında kapatma
+    document.getElementById('calendarPopup').addEventListener('click', function(e) {
+      if (e.target === this) {
+        toggleCalendar();
+      }
+    });
+
+    function showNotification(message, type) {
+        const notificationArea = document.getElementById('notificationArea');
+        const notificationMessage = document.getElementById('notificationMessage');
+        
+        // Stil ayarları
+        if (type === 'success') {
+            notificationArea.className = 'fixed bottom-4 right-4 z-50 bg-green-500 text-white border border-green-900';
+        } else if (type === 'error') {
+            notificationArea.className = 'fixed bottom-4 right-4 z-50 bg-red-500 text-white border border-red-900';
+        }
+        
+        notificationMessage.textContent = message;
+        notificationArea.classList.remove('hidden');
+        
+        // 3 saniye sonra bildirimi gizle
+        setTimeout(() => {
+            notificationArea.classList.add('hidden');
+        }, 3000);
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<nav class="nav-gradient border-b border-red-800">
+    <div class="max-w-7xl mx-auto px-4 py-3">
+        <div class="flex justify-between items-center">
+            <div class="flex items-center">
+                <a href="/" class="font-bold text-xl text-red-500">
+                    WatchXanime
+                </a>
+            </div>
+
+            <div class="flex-1 flex justify-center max-w-xl mx-4">
+                <div class="relative w-full">
+                    <input
+                        type="text"
+                        class="block w-full bg-[#1a1a1a] border border-red-900/50 rounded px-4 py-1.5 focus:outline-none focus:border-red-500 text-sm"
+                        placeholder="Anime Ara..."
+                    />
+                    <div class="absolute inset-y-0 right-0 flex items-center pr-3">
+                        <svg class="h-4 w-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex items-center relative">
+                <button onclick="toggleUserMenu()" class="hover:text-red-500 transition duration-300 p-2">
+                    <i class="fa-solid fa-circle-user text-xl"></i>
+                </button>
+
+                <!-- User Popup Menu -->
+                <div id="userMenu" class="hidden absolute right-0 top-full mt-2 w-48 bg-[#1a1a1a] border border-red-900/30 rounded-lg shadow-lg overflow-hidden z-50">
+                    @if (Context.Request.Cookies["jwt_token"] != null)
+                    {
+                        <!-- Giriş yapmış kullanıcı -->
+                        <div class="p-2">
+                            <form action="profile" method="get" class="flex items-center space-x-2 p-2 hover:bg-red-500/10 rounded transition duration-300 profile-link">
+                                <button type="submit" class="flex items-center space-x-2">
+                                    <i class="fa-solid fa-user w-5"></i>
+                                    <span class="text-sm">Profilim</span>
+                                </button>
+                            </form>
+                            <form action="logout" method="post" class="w-full">
+                                <button type="submit" class="w-full flex items-center space-x-2 p-2 hover:bg-red-500/10 rounded transition duration-300">
+                                    <i class="fa-solid fa-right-from-bracket w-5"></i>
+                                    <span class="text-sm">Çıkış Yap</span>
+                                </button>
+                            </form>
+                        </div>
+                    }
+                    else
+                    {
+                        <!-- Giriş yapmamış kullanıcı -->
+                        <div class="p-3 border-b border-red-900/30">
+                            <p class="text-sm text-gray-400">Hoş geldin!</p>
+                            <p class="text-xs text-gray-500">Devam etmek için giriş yap</p>
+                        </div>
+                        <div class="p-2">
+                            <a href="login?returnUrl=/profile" class="block flex items-center space-x-2 p-2 hover:bg-red-500/10 rounded transition duration-300">
+                                <i class="fa-solid fa-right-to-bracket w-5"></i>
+                                <span class="text-sm">Giriş Yap</span>
+                            </a>
+                            <a href="register" class="block flex items-center space-x-2 p-2 hover:bg-red-500/10 rounded transition duration-300">
+                                <i class="fa-solid fa-user-plus w-5"></i>
+                                <span class="text-sm">Kayıt Ol</span>
+                            </a>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Backdrop for User Menu -->
+<div id="menuBackdrop" class="hidden fixed inset-0 bg-black/50 z-40" onclick="toggleUserMenu()"></div>
+
+<script>
+function toggleUserMenu() {
+    const menu = document.getElementById('userMenu');
+    const backdrop = document.getElementById('menuBackdrop');
+    
+    if (menu.classList.contains('hidden')) {
+        menu.classList.remove('hidden');
+        backdrop.classList.remove('hidden');
+    } else {
+        menu.classList.add('hidden');
+        backdrop.classList.add('hidden');
+    }
+}
+</script>

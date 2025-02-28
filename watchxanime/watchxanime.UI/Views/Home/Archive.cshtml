@@ -1,0 +1,125 @@
+﻿@{
+    ViewData["Title"] = "Archive Page";
+    Layout = "~/Views/UILayout/Layout.cshtml";
+
+}
+
+<!-- Ana İçerik -->
+<div class="max-w-7xl mx-auto px-4 py-8">
+    <!-- Başlık ve İstatistikler -->
+    <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8">
+        <div>
+            <h1 class="text-3xl font-bold text-red-500 mb-2">Anime Arşivi</h1>
+            <p class="text-gray-400 text-sm">Toplam 2,500+ anime içeriği</p>
+        </div>
+        <div class="flex gap-4 mt-4 md:mt-0 text-sm">
+            <div class="bg-[#1a1a1a] rounded-lg px-4 py-2">
+                <div class="text-gray-400">Aktif Animeler</div>
+                <div class="text-red-500 font-semibold">156</div>
+            </div>
+            <div class="bg-[#1a1a1a] rounded-lg px-4 py-2">
+                <div class="text-gray-400">Bu Ay Eklenen</div>
+                <div class="text-red-500 font-semibold">45</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- İki Sütunlu Layout -->
+    <div class="flex flex-col md:flex-row gap-8">
+        <!-- Sol Taraf - Anime Listesi -->
+        <div class="flex-1">
+            <!-- Anime Grid -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5">
+
+
+                @await Component.InvokeAsync("_ArchiveComponent")
+            </div>
+
+            <!-- Sayfalama -->
+            <div class="flex justify-center items-center space-x-2 mt-12">
+                <a href="#" class="px-4 py-2 rounded-lg bg-[#1a1a1a] text-gray-400 hover:text-red-500 hover:bg-[#262626] transition duration-300">
+                    <i class="fas fa-chevron-left"></i>
+                </a>
+                <a href="#" class="px-4 py-2 rounded-lg bg-red-500 text-white">1</a>
+                <a href="#" class="px-4 py-2 rounded-lg bg-[#1a1a1a] text-gray-400 hover:text-red-500 hover:bg-[#262626] transition duration-300">2</a>
+                <a href="#" class="px-4 py-2 rounded-lg bg-[#1a1a1a] text-gray-400 hover:text-red-500 hover:bg-[#262626] transition duration-300">3</a>
+                <span class="px-4 py-2 text-gray-400">...</span>
+                <a href="#" class="px-4 py-2 rounded-lg bg-[#1a1a1a] text-gray-400 hover:text-red-500 hover:bg-[#262626] transition duration-300">12</a>
+                <a href="#" class="px-4 py-2 rounded-lg bg-[#1a1a1a] text-gray-400 hover:text-red-500 hover:bg-[#262626] transition duration-300">
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Sağ Sidebar - Filtreler -->
+        <div class="w-full md:w-72 shrink-0">
+            <div class="bg-[#1a1a1a] rounded-xl overflow-hidden">
+                <!-- Filtreleme Başlığı -->
+                <div class="p-4 border-b border-red-900/20">
+                    <h3 class="text-lg font-semibold text-red-500">Filtreleme</h3>
+                </div>
+
+                <!-- Filtreler -->
+                <div class="p-4 space-y-6">
+                    <!-- IMDb Puanı -->
+                    <div>
+                        <label class="block text-sm font-medium text-gray-300 mb-2">IMDb Puanı</label>
+                        <select class="w-full bg-[#262626] border border-red-900/30 rounded-lg px-4 py-2.5 text-sm text-gray-300">
+                            <option value="">Tümü</option>
+                            <option value="9">9 ve Üzeri</option>
+                            <option value="8">8 ve Üzeri</option>
+                            <option value="7">7 ve Üzeri</option>
+                            <option value="6">6 ve Üzeri</option>
+                        </select>
+                    </div>
+
+                    <!-- Yıl -->
+                    <div>
+                        <label class="block text-sm font-medium text-gray-300 mb-2">Yıl</label>
+                        <select class="w-full bg-[#262626] border border-red-900/30 rounded-lg px-4 py-2.5 text-sm text-gray-300">
+                            <option value="">Tümü</option>
+                            <option value="2024">2024</option>
+                            <option value="2023">2023</option>
+                            <option value="2022">2022</option>
+                            <option value="2021">2021</option>
+                            <option value="2020">2020</option>
+                            <option value="2019">2019</option>
+                        </select>
+                    </div>
+
+                    <!-- Kategori -->
+                    <div>
+                        <label class="block text-sm font-medium text-gray-300 mb-2">Kategori</label>
+                        <select class="w-full bg-[#262626] border border-red-900/30 rounded-lg px-4 py-2.5 text-sm text-gray-300">
+                            <option value="">Tümü</option>
+                            <option value="aksiyon">Aksiyon</option>
+                            <option value="macera">Macera</option>
+                            <option value="komedi">Komedi</option>
+                            <option value="dram">Dram</option>
+                            <option value="fantastik">Fantastik</option>
+                            <option value="romantik">Romantik</option>
+                        </select>
+                    </div>
+
+                    <!-- Sıralama -->
+                    <div>
+                        <label class="block text-sm font-medium text-gray-300 mb-2">Sıralama</label>
+                        <select class="w-full bg-[#262626] border border-red-900/30 rounded-lg px-4 py-2.5 text-sm text-gray-300">
+                            <option value="imdb_desc">IMDb (Yüksek → Düşük)</option>
+                            <option value="imdb_asc">IMDb (Düşük → Yüksek)</option>
+                            <option value="year_desc">Yıl (Yeni → Eski)</option>
+                            <option value="year_asc">Yıl (Eski → Yeni)</option>
+                            <option value="name_asc">İsim (A → Z)</option>
+                            <option value="name_desc">İsim (Z → A)</option>
+                        </select>
+                    </div>
+
+                    <!-- Filtreleme Butonu -->
+                    <button class="w-full bg-red-500 hover:bg-red-600 text-white py-2.5 rounded-lg text-sm font-medium transition">
+                        Filtrele
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

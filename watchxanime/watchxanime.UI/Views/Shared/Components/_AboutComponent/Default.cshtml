@@ -1,0 +1,49 @@
+﻿@model List<ResultAboutDTO>
+
+<div class="container mx-auto px-4 py-8">
+	@foreach (var item in Model)
+	{
+		@if(item.IsShown)
+		{
+			<div class="bg-[#1a1a1a] rounded-lg shadow-xl border border-red-900/30 p-6 mb-6">
+				<div class="space-y-4">
+					<!-- Başlık -->
+					<h2 class="text-2xl font-semibold text-red-500">
+						@item.Title
+					</h2>
+
+					<!-- Açıklama -->
+					<div class="text-gray-400 leading-relaxed">
+						@Html.Raw(item.Description)
+					</div>
+
+					<!-- Tarih Bilgileri -->
+					<div class="flex items-center gap-4 text-xs text-gray-500 mt-4 pt-4 border-t border-red-900/30">
+						<div class="flex items-center">
+							<i class="fas fa-clock mr-2"></i>
+							<span>Oluşturulma: @item.CreatedAt.ToString("dd.MM.yyyy HH:mm")</span>
+						</div>
+
+						@if(item.CreatedAt != item.UpdatedAt)
+						{
+							<div class="flex items-center">
+								<i class="fas fa-edit mr-2"></i>
+								<span>Güncelleme: @item.UpdatedAt.ToString("dd.MM.yyyy HH:mm")</span>
+							</div>
+						}
+					</div>
+				</div>
+			</div>
+		}
+	}
+
+	@if (!Model.Any(x => x.IsShown))
+	{
+		<div class="bg-[#1a1a1a] rounded-lg shadow-xl border border-red-900/30 p-6">
+			<div class="text-center text-gray-400">
+				<i class="fas fa-info-circle text-2xl mb-2"></i>
+				<p>Henüz içerik eklenmemiş.</p>
+			</div>
+		</div>
+	}
+</div>

@@ -1,0 +1,6 @@
+@watchxanime.API_HostAddress = http://localhost:5248
+
+GET {{watchxanime.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

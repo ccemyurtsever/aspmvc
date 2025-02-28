@@ -1,0 +1,51 @@
+C:\Users\C\Desktop\watchxanime\watchxanime\watchxanime.Business\bin\Debug\net8.0\watchxanime.Business.deps.json
+C:\Users\C\Desktop\watchxanime\watchxanime\watchxanime.Business\bin\Debug\net8.0\watchxanime.Business.dll
+C:\Users\C\Desktop\watchxanime\watchxanime\watchxanime.Business\bin\Debug\net8.0\watchxanime.Business.pdb
+C:\Users\C\Desktop\watchxanime\watchxanime\watchxanime.Business\bin\Debug\net8.0\watchxanime.DataAccsess.dll
+C:\Users\C\Desktop\watchxanime\watchxanime\watchxanime.Business\bin\Debug\net8.0\watchxanime.Entity.dll
+C:\Users\C\Desktop\watchxanime\watchxanime\watchxanime.Business\bin\Debug\net8.0\watchxanime.DataAccsess.pdb
+C:\Users\C\Desktop\watchxanime\watchxanime\watchxanime.Business\bin\Debug\net8.0\watchxanime.Entity.pdb
+C:\Users\C\Desktop\watchxanime\watchxanime\watchxanime.Business\obj\Debug\net8.0\watchxanime.Business.csproj.AssemblyReference.cache
+C:\Users\C\Desktop\watchxanime\watchxanime\watchxanime.Business\obj\Debug\net8.0\watchxanime.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\C\Desktop\watchxanime\watchxanime\watchxanime.Business\obj\Debug\net8.0\watchxanime.Business.AssemblyInfoInputs.cache
+C:\Users\C\Desktop\watchxanime\watchxanime\watchxanime.Business\obj\Debug\net8.0\watchxanime.Business.AssemblyInfo.cs
+C:\Users\C\Desktop\watchxanime\watchxanime\watchxanime.Business\obj\Debug\net8.0\watchxanime.Business.csproj.CoreCompileInputs.cache
+C:\Users\C\Desktop\watchxanime\watchxanime\watchxanime.Business\obj\Debug\net8.0\watchxan.2DBD0903.Up2Date
+C:\Users\C\Desktop\watchxanime\watchxanime\watchxanime.Business\obj\Debug\net8.0\watchxanime.Business.dll
+C:\Users\C\Desktop\watchxanime\watchxanime\watchxanime.Business\obj\Debug\net8.0\refint\watchxanime.Business.dll
+C:\Users\C\Desktop\watchxanime\watchxanime\watchxanime.Business\obj\Debug\net8.0\watchxanime.Business.pdb
+C:\Users\C\Desktop\watchxanime\watchxanime\watchxanime.Business\obj\Debug\net8.0\ref\watchxanime.Business.dll
+C:\Users\C\Desktop\watchxanime\Web\watchxanime\watchxanime.Business\bin\Debug\net8.0\watchxanime.Business.deps.json
+C:\Users\C\Desktop\watchxanime\Web\watchxanime\watchxanime.Business\bin\Debug\net8.0\watchxanime.Business.dll
+C:\Users\C\Desktop\watchxanime\Web\watchxanime\watchxanime.Business\bin\Debug\net8.0\watchxanime.Business.pdb
+C:\Users\C\Desktop\watchxanime\Web\watchxanime\watchxanime.Business\bin\Debug\net8.0\watchxanime.DataAccsess.dll
+C:\Users\C\Desktop\watchxanime\Web\watchxanime\watchxanime.Business\bin\Debug\net8.0\watchxanime.Entity.dll
+C:\Users\C\Desktop\watchxanime\Web\watchxanime\watchxanime.Business\bin\Debug\net8.0\watchxanime.DataAccsess.pdb
+C:\Users\C\Desktop\watchxanime\Web\watchxanime\watchxanime.Business\bin\Debug\net8.0\watchxanime.Entity.pdb
+C:\Users\C\Desktop\watchxanime\Web\watchxanime\watchxanime.Business\obj\Debug\net8.0\watchxanime.Business.csproj.AssemblyReference.cache
+C:\Users\C\Desktop\watchxanime\Web\watchxanime\watchxanime.Business\obj\Debug\net8.0\watchxanime.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\C\Desktop\watchxanime\Web\watchxanime\watchxanime.Business\obj\Debug\net8.0\watchxanime.Business.AssemblyInfoInputs.cache
+C:\Users\C\Desktop\watchxanime\Web\watchxanime\watchxanime.Business\obj\Debug\net8.0\watchxanime.Business.AssemblyInfo.cs
+C:\Users\C\Desktop\watchxanime\Web\watchxanime\watchxanime.Business\obj\Debug\net8.0\watchxanime.Business.csproj.CoreCompileInputs.cache
+C:\Users\C\Desktop\watchxanime\Web\watchxanime\watchxanime.Business\obj\Debug\net8.0\watchxan.2DBD0903.Up2Date
+C:\Users\C\Desktop\watchxanime\Web\watchxanime\watchxanime.Business\obj\Debug\net8.0\watchxanime.Business.dll
+C:\Users\C\Desktop\watchxanime\Web\watchxanime\watchxanime.Business\obj\Debug\net8.0\refint\watchxanime.Business.dll
+C:\Users\C\Desktop\watchxanime\Web\watchxanime\watchxanime.Business\obj\Debug\net8.0\watchxanime.Business.pdb
+C:\Users\C\Desktop\watchxanime\Web\watchxanime\watchxanime.Business\obj\Debug\net8.0\ref\watchxanime.Business.dll
+C:\Users\C\Desktop\watchxanime - Copy (2) yrs login\Web\watchxanime\watchxanime.Business\bin\Debug\net8.0\watchxanime.Business.deps.json
+C:\Users\C\Desktop\watchxanime - Copy (2) yrs login\Web\watchxanime\watchxanime.Business\bin\Debug\net8.0\watchxanime.Business.dll
+C:\Users\C\Desktop\watchxanime - Copy (2) yrs login\Web\watchxanime\watchxanime.Business\bin\Debug\net8.0\watchxanime.Business.pdb
+C:\Users\C\Desktop\watchxanime - Copy (2) yrs login\Web\watchxanime\watchxanime.Business\bin\Debug\net8.0\watchxanime.DataAccsess.dll
+C:\Users\C\Desktop\watchxanime - Copy (2) yrs login\Web\watchxanime\watchxanime.Business\bin\Debug\net8.0\watchxanime.Entity.dll
+C:\Users\C\Desktop\watchxanime - Copy (2) yrs login\Web\watchxanime\watchxanime.Business\bin\Debug\net8.0\watchxanime.DataAccsess.pdb
+C:\Users\C\Desktop\watchxanime - Copy (2) yrs login\Web\watchxanime\watchxanime.Business\bin\Debug\net8.0\watchxanime.Entity.pdb
+C:\Users\C\Desktop\watchxanime - Copy (2) yrs login\Web\watchxanime\watchxanime.Business\obj\Debug\net8.0\watchxanime.Business.csproj.AssemblyReference.cache
+C:\Users\C\Desktop\watchxanime - Copy (2) yrs login\Web\watchxanime\watchxanime.Business\obj\Debug\net8.0\watchxanime.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\C\Desktop\watchxanime - Copy (2) yrs login\Web\watchxanime\watchxanime.Business\obj\Debug\net8.0\watchxanime.Business.AssemblyInfoInputs.cache
+C:\Users\C\Desktop\watchxanime - Copy (2) yrs login\Web\watchxanime\watchxanime.Business\obj\Debug\net8.0\watchxanime.Business.AssemblyInfo.cs
+C:\Users\C\Desktop\watchxanime - Copy (2) yrs login\Web\watchxanime\watchxanime.Business\obj\Debug\net8.0\watchxanime.Business.csproj.CoreCompileInputs.cache
+C:\Users\C\Desktop\watchxanime - Copy (2) yrs login\Web\watchxanime\watchxanime.Business\obj\Debug\net8.0\watchxan.2DBD0903.Up2Date
+C:\Users\C\Desktop\watchxanime - Copy (2) yrs login\Web\watchxanime\watchxanime.Business\obj\Debug\net8.0\watchxanime.Business.dll
+C:\Users\C\Desktop\watchxanime - Copy (2) yrs login\Web\watchxanime\watchxanime.Business\obj\Debug\net8.0\refint\watchxanime.Business.dll
+C:\Users\C\Desktop\watchxanime - Copy (2) yrs login\Web\watchxanime\watchxanime.Business\obj\Debug\net8.0\watchxanime.Business.pdb
+C:\Users\C\Desktop\watchxanime - Copy (2) yrs login\Web\watchxanime\watchxanime.Business\obj\Debug\net8.0\ref\watchxanime.Business.dll

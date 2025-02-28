@@ -1,0 +1,361 @@
+﻿
+@{
+    ViewData["Title"] = "Watch";
+    Layout = "~/Views/UILayout/Layout.cshtml";
+}
+<link href="https://vjs.zencdn.net/8.0.4/video-js.css" rel="stylesheet" />
+<!-- Ana İçerik -->
+<div class="max-w-[1280px] mx-auto px-4 py-6 flex flex-col lg:flex-row gap-6">
+    <!-- Sol Taraf - Video ve Bilgiler -->
+    <div class="lg:w-[75%]">
+        <!-- Bölüm Başlığı -->
+        <div class="bg-[#1a1a1a] px-4 py-2 rounded-lg mb-4 text-sm">
+            <div class="relative">
+                Attack on Titan 1.Sezon 1.Bölüm
+                <div class="absolute bottom-0 left-0 w-1/3 h-[2px] bg-gradient-to-r from-red-500/80 to-transparent"></div>
+            </div>
+        </div>
+
+        <!-- Video Player -->
+        <div class="relative bg-[#1a1a1a] rounded-lg overflow-hidden shadow-lg w-full max-w-[960px] mx-auto">
+            <video id="my-video"
+                   class="video-js vjs-theme-custom vjs-big-play-centered"
+                   controls
+                   preload="auto"
+                   poster="video-poster.jpg"
+                   data-setup='{
+            "fluid": true,
+            "playbackRates": [0.5, 0.75, 1, 1.25, 1.5, 2],
+            "controlBar": {
+              "children": [
+                "playToggle",
+                "volumePanel",
+                "currentTimeDisplay",
+                "timeDivider",
+                "durationDisplay",
+                "progressControl",
+                "remainingTimeDisplay",
+                "playbackRateMenuButton",
+                "qualitySelector",
+                "fullscreenToggle"
+              ]
+            }
+          }'>
+                <source src="https://de-cache-nd-61355.oceanicecdn.online/animes/date-a-live/1/1-7082982286668337153-480p.mp4" type="video/mp4" label="480p" />
+                <source src="https://de-cache-nd-61355.oceanicecdn.online/animes/date-a-live/1/1-7082982286668337153-720p.mp4" type="video/mp4" label="720p" selected="true" />
+                <source src="https://de-cache-nd-61355.oceanicecdn.online/animes/date-a-live/1/1-7082982286668337153-1080p.mp4" type="video/mp4" label="1080p" />
+                <p class="vjs-no-js">Video oynatıcıyı görüntülemek için JavaScript'i etkinleştirmeniz gerekir.</p>
+            </video>
+        </div>
+
+        <!-- Önceki/Sonraki Bölüm Butonları -->
+        <div class="flex justify-between gap-3 mt-4">
+            <a href="#" class="flex-1 bg-[#1a1a1a] border border-red-900/30 hover:border-red-500/50 text-gray-300 hover:text-white px-4 py-2.5 rounded-lg transition-all duration-300 flex items-center justify-center group text-sm">
+                <i class="fas fa-chevron-left text-xs mr-2 transform group-hover:-translate-x-1 transition-transform duration-300"></i>
+                <span>Önceki Bölüm</span>
+            </a>
+            <a href="#" class="flex-1 bg-[#1a1a1a] border border-red-900/30 hover:border-red-500/50 text-gray-300 hover:text-white px-4 py-2.5 rounded-lg transition-all duration-300 flex items-center justify-center group text-sm">
+                <span>Sonraki Bölüm</span>
+                <i class="fas fa-chevron-right text-xs ml-2 transform group-hover:translate-x-1 transition-transform duration-300"></i>
+            </a>
+        </div>
+
+        <!-- Yorumlar Bölümü -->
+        <div class="mt-8">
+            <h2 class="text-lg font-semibold mb-4">Yorumlar</h2>
+
+            <!-- Yorum Yazma Formu -->
+            <div class="bg-[#1a1a1a] rounded-lg p-4 mb-6">
+                <div class="flex gap-3">
+                    <div class="flex-shrink-0">
+                        <div class="w-10 h-10 rounded-full bg-red-600 flex items-center justify-center">
+                            <i class="fas fa-user text-white"></i>
+                        </div>
+                    </div>
+                    <div class="flex-grow">
+                        <textarea class="w-full bg-[#111111] border border-red-900/30 rounded-lg p-3 text-sm text-gray-300 focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500 transition duration-300"
+                                  rows="3"
+                                  placeholder="Yorumunuzu yazın..."></textarea>
+                        <div class="flex items-center justify-between mt-2">
+                            <div class="flex items-center">
+                                <input type="checkbox" id="spoiler" class="h-4 w-4 text-red-500 rounded border-gray-700 bg-[#111111] focus:ring-red-500">
+                                <label for="spoiler" class="ml-2 text-sm text-gray-400">Spoiler içerir</label>
+                            </div>
+                            <button class="bg-red-600 hover:bg-red-700 px-4 py-2 rounded text-sm transition duration-300">
+                                Yorum Yap
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Yorumlar Listesi -->
+            <div class="space-y-6">
+                <!-- Normal Yorum -->
+                <div class="bg-[#1a1a1a] rounded-lg p-4">
+                    <div class="flex gap-3">
+                        <div class="flex-shrink-0">
+                            <div class="w-10 h-10 rounded-full bg-red-600 flex items-center justify-center">
+                                <i class="fas fa-user text-white"></i>
+                            </div>
+                        </div>
+                        <div class="flex-grow">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <span class="font-medium">AnimeLovers</span>
+                                    <span class="text-xs text-gray-400 ml-2">2 saat önce</span>
+                                </div>
+                                <button class="text-gray-400 hover:text-red-500 transition duration-300">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </button>
+                            </div>
+                            <p class="text-sm text-gray-300 mt-2">
+                                Harika bir bölümdü! Animenin başlangıcı için mükemmel bir giriş yapıyor.
+                            </p>
+                            <div class="flex items-center gap-4 mt-3 text-sm text-gray-400">
+                                <button class="hover:text-red-500 transition duration-300">
+                                    <i class="far fa-heart mr-1"></i> 24
+                                </button>
+                                <button class="hover:text-red-500 transition duration-300">
+                                    <i class="far fa-comment mr-1"></i> Yanıtla
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Spoiler İçeren Yorum -->
+                <div class="bg-[#1a1a1a] rounded-lg p-4">
+                    <div class="flex gap-3">
+                        <div class="flex-shrink-0">
+                            <div class="w-10 h-10 rounded-full bg-red-600 flex items-center justify-center">
+                                <i class="fas fa-user text-white"></i>
+                            </div>
+                        </div>
+                        <div class="flex-grow">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <span class="font-medium">TitanFan</span>
+                                    <span class="text-xs text-gray-400 ml-2">5 saat önce</span>
+                                    <span class="text-xs bg-red-600 text-white px-2 py-0.5 rounded ml-2">Spoiler</span>
+                                </div>
+                                <button class="text-gray-400 hover:text-red-500 transition duration-300">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </button>
+                            </div>
+                            <div class="mt-2">
+                                <div class="bg-[#111111] border border-red-900/30 rounded-lg p-3 cursor-pointer select-none">
+                                    <p class="text-sm text-gray-400 text-center">
+                                        Bu yorum spoiler içeriyor. Görüntülemek için tıklayın.
+                                    </p>
+                                    <p class="text-sm text-gray-300 mt-2 hidden">
+                                        <!-- Spoiler içeriği varsayılan olarak gizli -->
+                                        Eren'in titan formunu gördüğümüzde çok şaşıracaksınız! Özellikle 5. bölümde...
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4 mt-3 text-sm text-gray-400">
+                                <button class="hover:text-red-500 transition duration-300">
+                                    <i class="far fa-heart mr-1"></i> 15
+                                </button>
+                                <button class="hover:text-red-500 transition duration-300">
+                                    <i class="far fa-comment mr-1"></i> Yanıtla
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Yanıtlı Yorum Örneği -->
+                <div class="bg-[#1a1a1a] rounded-lg p-4">
+                    <div class="flex gap-3">
+                        <div class="flex-shrink-0">
+                            <div class="w-10 h-10 rounded-full bg-red-600 flex items-center justify-center">
+                                <i class="fas fa-user text-white"></i>
+                            </div>
+                        </div>
+                        <div class="flex-grow">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <span class="font-medium">MangaReader</span>
+                                    <span class="text-xs text-gray-400 ml-2">1 gün önce</span>
+                                </div>
+                                <button class="text-gray-400 hover:text-red-500 transition duration-300">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </button>
+                            </div>
+                            <p class="text-sm text-gray-300 mt-2">
+                                Müzikler ve animasyon kalitesi gerçekten etkileyici!
+                            </p>
+                            <div class="flex items-center gap-4 mt-3 text-sm text-gray-400">
+                                <button class="hover:text-red-500 transition duration-300">
+                                    <i class="far fa-heart mr-1"></i> 32
+                                </button>
+                                <button class="hover:text-red-500 transition duration-300">
+                                    <i class="far fa-comment mr-1"></i> Yanıtla
+                                </button>
+                            </div>
+
+                            <!-- Yanıt -->
+                            <div class="mt-4 ml-8 bg-[#111111] rounded-lg p-4">
+                                <div class="flex gap-3">
+                                    <div class="flex-shrink-0">
+                                        <div class="w-8 h-8 rounded-full bg-red-600 flex items-center justify-center">
+                                            <i class="fas fa-user text-white text-sm"></i>
+                                        </div>
+                                    </div>
+                                    <div class="flex-grow">
+                                        <div class="flex items-center justify-between">
+                                            <div>
+                                                <span class="font-medium">AnimeFan</span>
+                                                <span class="text-xs text-gray-400 ml-2">12 saat önce</span>
+                                            </div>
+                                        </div>
+                                        <p class="text-sm text-gray-300 mt-2">
+                                            Kesinlikle katılıyorum! Özellikle açılış müziği muhteşem.
+                                        </p>
+                                        <div class="flex items-center gap-4 mt-3 text-sm text-gray-400">
+                                            <button class="hover:text-red-500 transition duration-300">
+                                                <i class="far fa-heart mr-1"></i> 8
+                                            </button>
+                                            <button class="hover:text-red-500 transition duration-300">
+                                                <i class="far fa-comment mr-1"></i> Yanıtla
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sağ Taraf - Bölümler ve Anime Bilgileri -->
+    <div class="lg:w-[25%]">
+        <!-- Bölümler Listesi -->
+        <div class="bg-[#1a1a1a] rounded-lg p-4">
+            <h2 class="text-lg font-semibold mb-4 flex items-center">
+                <i class="fas fa-list-ul mr-2 text-red-500"></i>
+                Bölümler
+            </h2>
+
+            <!-- Sezon Seçici -->
+            <div class="flex gap-2 mb-4 text-sm">
+                <button class="bg-red-500 text-white px-3 py-1 rounded">Sezon 1</button>
+                <button class="bg-[#222] hover:bg-[#333] px-3 py-1 rounded transition-colors">Sezon 2</button>
+                <button class="bg-[#222] hover:bg-[#333] px-3 py-1 rounded transition-colors">Sezon 3</button>
+            </div>
+
+            <div class="episodes-list space-y-2.5">
+                <!-- Aktif Bölüm -->
+                <a href="#" class="episode-item block bg-red-500/10 hover:bg-red-500/20 rounded-lg transition-all duration-200 border border-red-500/50">
+                    <div class="p-3">
+                        <div class="flex items-center gap-2">
+                            <span class="episode-number w-9 h-9 flex items-center justify-center bg-red-500 rounded-lg text-white font-medium text-sm">1</span>
+                            <div class="flex-1 min-w-0">
+                                <div class="font-medium text-sm truncate">Bölüm 1</div>
+                                <div class="text-xs text-gray-400 truncate">To You, 2000 Years From Now</div>
+                            </div>
+                            <div class="text-xs bg-red-500 text-white px-2 py-0.5 rounded shrink-0">İzleniyor</div>
+                        </div>
+                        <div class="mt-2 text-xs text-gray-400 line-clamp-2">
+                            Humanity lives inside cities surrounded by enormous walls due to the Titans...
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Normal Bölüm -->
+                <a href="#" class="episode-item block bg-[#111]/50 hover:bg-[#222] rounded-lg transition-all duration-200">
+                    <div class="p-3">
+                        <div class="flex items-center gap-3">
+                            <span class="episode-number w-10 h-10 flex items-center justify-center bg-[#333] rounded-lg text-gray-300 font-medium">2</span>
+                            <div class="flex-1">
+                                <div class="font-medium">Bölüm 2</div>
+                                <div class="text-sm text-gray-400">That Day</div>
+                            </div>
+                            <div class="text-xs bg-green-500/20 text-green-400 px-2 py-1 rounded">İzlendi</div>
+                        </div>
+                        <div class="mt-2 text-sm text-gray-400 line-clamp-2">
+                            After the Titans break through the wall, the citizens of Shiganshina must run for their lives. However, those that do make it to safety find a harsh life waiting for them...
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Diğer Bölümler -->
+                <a href="#" class="episode-item block bg-[#111]/50 hover:bg-[#222] rounded-lg transition-all duration-200">
+                    <div class="p-3">
+                        <div class="flex items-center gap-3">
+                            <span class="episode-number w-10 h-10 flex items-center justify-center bg-[#333] rounded-lg text-gray-300 font-medium">3</span>
+                            <div class="flex-1">
+                                <div class="font-medium">Bölüm 3</div>
+                                <div class="text-sm text-gray-400">A Dim Light Amid Despair</div>
+                            </div>
+                        </div>
+                        <div class="mt-2 text-sm text-gray-400 line-clamp-2">
+                            Eren begins his training with the 104th Training Corps. During his training, he learns about the sophisticated equipment soldiers use to fight Titans...
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Daha Fazla Bölüm Butonu -->
+                <button class="w-full bg-[#222] hover:bg-[#333] text-sm text-gray-400 hover:text-white py-2 rounded-lg transition-colors">
+                    Daha Fazla Bölüm Göster (22)
+                </button>
+            </div>
+        </div>
+
+        <!-- Benzer Animeler -->
+        <div class="mt-6">
+            <h3 class="text-lg font-semibold mb-3">Benzer Animeler</h3>
+            <div class="space-y-3">
+                <a href="#" class="block group">
+                    <div class="flex gap-3">
+                        <img src="https://cdn.myanimelist.net/images/anime/1170/124312l.jpg" alt="Anime" class="w-16 h-24 object-cover rounded">
+                        <div class="flex-1">
+                            <h4 class="font-medium group-hover:text-red-500 transition duration-300">Jujutsu Kaisen</h4>
+                            <p class="text-xs text-gray-400 mt-1">TV Serisi • 24 Bölüm</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="block group">
+                    <div class="flex gap-3">
+                        <img src="https://cdn.myanimelist.net/images/anime/1708/138033l.jpg" alt="Anime" class="w-16 h-24 object-cover rounded">
+                        <div class="flex-1">
+                            <h4 class="font-medium group-hover:text-red-500 transition duration-300">Solo Leveling</h4>
+                            <p class="text-xs text-gray-400 mt-1">TV Serisi • Devam Ediyor</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://vjs.zencdn.net/8.0.4/video.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var player = videojs('my-video', {
+        controls: true,
+        fluid: true,
+        html5: {
+          vhs: {
+            overrideNative: true
+          }
+        }
+      });
+
+      // Boşluk tuşu kontrolü
+      document.addEventListener('keydown', function(e) {
+        if (e.code === 'Space' && !e.target.matches('input, textarea')) {
+          e.preventDefault();
+          if (player.paused()) {
+            player.play();
+          } else {
+            player.pause();
+          }
+        }
+      });
+    });
+</script>
+

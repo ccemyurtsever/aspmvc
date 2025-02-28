@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil - WatchXanime</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #0f0f0f;
+    }
+    .nav-gradient {
+      background: linear-gradient(to bottom, #111111, #0f0f0f);
+    }
+  </style>
+</head>
+<body class="text-gray-100 min-h-screen flex flex-col">
+  <nav class="nav-gradient border-b border-red-800">
+  </nav>
+
+  <div class="max-w-7xl mx-auto px-4 py-8 flex-grow">
+    <div class="bg-[#1a1a1a] rounded-lg p-6 mb-6">
+      <div class="flex items-center gap-6">
+        <div class="w-24 h-24 rounded-full bg-red-600 flex items-center justify-center">
+          <i class="fas fa-user text-4xl"></i>
+        </div>
+        <div class="flex-grow">
+          <h1 class="text-2xl font-bold">xxpromaxxx</h1>
+          <p class="text-gray-400 text-sm">Üyelik Tarihi: Ocak 2024</p>
+          <div class="flex gap-4 mt-3">
+            <span class="text-sm text-gray-400"><i class="fas fa-comment mr-1"></i> 156 Yorum</span>
+            <span class="text-sm text-gray-400"><i class="fas fa-heart mr-1"></i> 243 Beğeni</span>
+          </div>
+        </div>
+        <button class="bg-red-600 hover:bg-red-700 px-4 py-2 rounded text-sm transition duration-300">
+          <i class="fas fa-edit mr-1"></i> Profili Düzenle
+        </button>
+      </div>
+    </div>
+
+    <div class="flex flex-col lg:flex-row gap-6">
+      <div class="lg:w-[250px]">
+        <div class="bg-[#1a1a1a] rounded-lg p-4">
+          <nav class="space-y-2">
+            <a href="#" class="flex items-center gap-3 text-red-500 bg-[#111111] p-3 rounded-lg">
+              <i class="fas fa-list"></i>
+              <span>İzleme Listem</span>
+            </a>
+            <a href="#" class="flex items-center gap-3 text-gray-400 hover:text-red-500 p-3 rounded-lg transition duration-300">
+              <i class="fas fa-clock"></i>
+              <span>İzleme Geçmişi</span>
+            </a>
+            <a href="#" class="flex items-center gap-3 text-gray-400 hover:text-red-500 p-3 rounded-lg transition duration-300">
+              <i class="fas fa-comment"></i>
+              <span>Yorumlarım</span>
+            </a>
+            <a href="#" class="flex items-center gap-3 text-gray-400 hover:text-red-500 p-3 rounded-lg transition duration-300">
+              <i class="fas fa-heart"></i>
+              <span>Beğendiklerim</span>
+            </a>
+            <a href="#" class="flex items-center gap-3 text-gray-400 hover:text-red-500 p-3 rounded-lg transition duration-300">
+              <i class="fas fa-cog"></i>
+              <span>Ayarlar</span>
+            </a>
+            <div class="border-t border-red-900/30 my-2"></div>
+            <a href="/logout" class="flex items-center gap-3 text-gray-400 hover:text-red-500 p-3 rounded-lg transition duration-300">
+              <i class="fas fa-sign-out-alt"></i>
+              <span>Çıkış Yap</span>
+            </a>
+          </nav>
+        </div>
+      </div>
+
+      <div class="flex-grow">
+        <div class="bg-[#1a1a1a] rounded-lg p-6">
+          <div class="flex justify-between items-center mb-6">
+            <h2 class="text-xl font-semibold">İzleme Listem</h2>
+            <div class="flex gap-2">
+              <button class="bg-[#111111] hover:bg-[#1c1c1c] px-3 py-1.5 rounded text-sm transition duration-300">
+                <i class="fas fa-sort mr-1"></i> Sırala
+              </button>
+              <button class="bg-[#111111] hover:bg-[#1c1c1c] px-3 py-1.5 rounded text-sm transition duration-300">
+                <i class="fas fa-filter mr-1"></i> Filtrele
+              </button>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
+            <div class="bg-[#111111] rounded-lg overflow-hidden group">
+              <div class="relative">
+                <img src="https://cdn.myanimelist.net/images/anime/1170/124312l.jpg" alt="Anime" class="w-full aspect-video object-cover">
+                <div class="absolute top-2 right-2">
+                  <span class="bg-red-600 text-xs px-2 py-1 rounded">Devam Ediyor</span>
+                </div>
+              </div>
+              <div class="p-4">
+                <h3 class="font-medium group-hover:text-red-500 transition duration-300">Jujutsu Kaisen</h3>
+                <div class="flex justify-between items-center mt-2 text-sm text-gray-400">
+                  <span>12/24 Bölüm</span>
+                  <div class="flex gap-2">
+                    <button class="hover:text-red-500 transition duration-300">
+                      <i class="fas fa-edit"></i>
+                    </button>
+                    <button class="hover:text-red-500 transition duration-300">
+                      <i class="fas fa-trash"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-[#111111] rounded-lg overflow-hidden group">
+              <div class="relative">
+                <img src="https://cdn.myanimelist.net/images/anime/1792/138022l.jpg" alt="Anime" class="w-full aspect-video object-cover">
+                <div class="absolute top-2 right-2">
+                  <span class="bg-green-600 text-xs px-2 py-1 rounded">Tamamlandı</span>
+                </div>
+              </div>
+              <div class="p-4">
+                <h3 class="font-medium group-hover:text-red-500 transition duration-300">Demon Slayer</h3>
+                <div class="flex justify-between items-center mt-2 text-sm text-gray-400">
+                  <span>24/24 Bölüm</span>
+                  <div class="flex gap-2">
+                    <button class="hover:text-red-500 transition duration-300">
+                      <i class="fas fa-edit"></i>
+                    </button>
+                    <button class="hover:text-red-500 transition duration-300">
+                      <i class="fas fa-trash"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="flex justify-center mt-6 gap-2">
+            <button class="bg-[#111111] hover:bg-[#1c1c1c] px-3 py-1.5 rounded text-sm transition duration-300">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="bg-red-600 px-3 py-1.5 rounded text-sm">1</button>
+            <button class="bg-[#111111] hover:bg-[#1c1c1c] px-3 py-1.5 rounded text-sm transition duration-300">2</button>
+            <button class="bg-[#111111] hover:bg-[#1c1c1c] px-3 py-1.5 rounded text-sm transition duration-300">3</button>
+            <button class="bg-[#111111] hover:bg-[#1c1c1c] px-3 py-1.5 rounded text-sm transition duration-300">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="border-t border-red-900/30 bg-[#1a1a1a]">
+  </footer>
+</body>
+</html> 

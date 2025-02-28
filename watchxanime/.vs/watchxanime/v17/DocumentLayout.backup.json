@@ -1,0 +1,197 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\C\\Desktop\\watchxanime\\Web\\watchxanime\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DEB9A3A9-DF01-41DE-8164-D2E3D007162D}|watchxanime.UI\\watchxanime.UI.csproj|c:\\users\\c\\desktop\\watchxanime\\web\\watchxanime\\watchxanime.ui\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEB9A3A9-DF01-41DE-8164-D2E3D007162D}|watchxanime.UI\\watchxanime.UI.csproj|solutionrelative:watchxanime.ui\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEB9A3A9-DF01-41DE-8164-D2E3D007162D}|watchxanime.UI\\watchxanime.UI.csproj|c:\\users\\c\\desktop\\watchxanime\\web\\watchxanime\\watchxanime.ui\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEB9A3A9-DF01-41DE-8164-D2E3D007162D}|watchxanime.UI\\watchxanime.UI.csproj|solutionrelative:watchxanime.ui\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEB9A3A9-DF01-41DE-8164-D2E3D007162D}|watchxanime.UI\\watchxanime.UI.csproj|c:\\users\\c\\desktop\\watchxanime\\web\\watchxanime\\watchxanime.ui\\views\\uilayout\\layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DEB9A3A9-DF01-41DE-8164-D2E3D007162D}|watchxanime.UI\\watchxanime.UI.csproj|solutionrelative:watchxanime.ui\\views\\uilayout\\layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEB9A3A9-DF01-41DE-8164-D2E3D007162D}|watchxanime.UI\\watchxanime.UI.csproj|c:\\users\\c\\desktop\\watchxanime\\web\\watchxanime\\watchxanime.ui\\controllers\\uilayoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEB9A3A9-DF01-41DE-8164-D2E3D007162D}|watchxanime.UI\\watchxanime.UI.csproj|solutionrelative:watchxanime.ui\\controllers\\uilayoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEB9A3A9-DF01-41DE-8164-D2E3D007162D}|watchxanime.UI\\watchxanime.UI.csproj|c:\\users\\c\\desktop\\watchxanime\\web\\watchxanime\\watchxanime.ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEB9A3A9-DF01-41DE-8164-D2E3D007162D}|watchxanime.UI\\watchxanime.UI.csproj|solutionrelative:watchxanime.ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEB9A3A9-DF01-41DE-8164-D2E3D007162D}|watchxanime.UI\\watchxanime.UI.csproj|c:\\users\\c\\desktop\\watchxanime\\web\\watchxanime\\watchxanime.ui\\watchxanime.ui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{DEB9A3A9-DF01-41DE-8164-D2E3D007162D}|watchxanime.UI\\watchxanime.UI.csproj|solutionrelative:watchxanime.ui\\watchxanime.ui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEB9A3A9-DF01-41DE-8164-D2E3D007162D}|watchxanime.UI\\watchxanime.UI.csproj|c:\\users\\c\\desktop\\watchxanime\\web\\watchxanime\\watchxanime.ui\\views\\uilayout\\partials\\_navbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DEB9A3A9-DF01-41DE-8164-D2E3D007162D}|watchxanime.UI\\watchxanime.UI.csproj|solutionrelative:watchxanime.ui\\views\\uilayout\\partials\\_navbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEB9A3A9-DF01-41DE-8164-D2E3D007162D}|watchxanime.UI\\watchxanime.UI.csproj|c:\\users\\c\\desktop\\watchxanime\\web\\watchxanime\\watchxanime.ui\\views\\uilayout\\partials\\_register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DEB9A3A9-DF01-41DE-8164-D2E3D007162D}|watchxanime.UI\\watchxanime.UI.csproj|solutionrelative:watchxanime.ui\\views\\uilayout\\partials\\_register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEB9A3A9-DF01-41DE-8164-D2E3D007162D}|watchxanime.UI\\watchxanime.UI.csproj|c:\\users\\c\\desktop\\watchxanime\\web\\watchxanime\\watchxanime.ui\\views\\uilayout\\partials\\_login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DEB9A3A9-DF01-41DE-8164-D2E3D007162D}|watchxanime.UI\\watchxanime.UI.csproj|solutionrelative:watchxanime.ui\\views\\uilayout\\partials\\_login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEB9A3A9-DF01-41DE-8164-D2E3D007162D}|watchxanime.UI\\watchxanime.UI.csproj|c:\\users\\c\\desktop\\watchxanime\\web\\watchxanime\\watchxanime.ui\\views\\shared\\components\\_aboutcomponent\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DEB9A3A9-DF01-41DE-8164-D2E3D007162D}|watchxanime.UI\\watchxanime.UI.csproj|solutionrelative:watchxanime.ui\\views\\shared\\components\\_aboutcomponent\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEB9A3A9-DF01-41DE-8164-D2E3D007162D}|watchxanime.UI\\watchxanime.UI.csproj|c:\\users\\c\\desktop\\watchxanime\\web\\watchxanime\\watchxanime.ui\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{DEB9A3A9-DF01-41DE-8164-D2E3D007162D}|watchxanime.UI\\watchxanime.UI.csproj|solutionrelative:watchxanime.ui\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\C\\Desktop\\watchxanime\\Web\\watchxanime\\watchxanime.UI\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "watchxanime.UI\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\C\\Desktop\\watchxanime\\Web\\watchxanime\\watchxanime.UI\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "watchxanime.UI\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAIsAAAAAAAAAAAAowJoAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-26T19:27:56.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "watchxanime.UI.csproj",
+              "DocumentMoniker": "C:\\Users\\C\\Desktop\\watchxanime\\Web\\watchxanime\\watchxanime.UI\\watchxanime.UI.csproj",
+              "RelativeDocumentMoniker": "watchxanime.UI\\watchxanime.UI.csproj",
+              "ToolTip": "C:\\Users\\C\\Desktop\\watchxanime\\Web\\watchxanime\\watchxanime.UI\\watchxanime.UI.csproj",
+              "RelativeToolTip": "watchxanime.UI\\watchxanime.UI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-26T18:05:26.39Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_Navbar.cshtml",
+              "DocumentMoniker": "C:\\Users\\C\\Desktop\\watchxanime\\Web\\watchxanime\\watchxanime.UI\\Views\\UILayout\\Partials\\_Navbar.cshtml",
+              "RelativeDocumentMoniker": "watchxanime.UI\\Views\\UILayout\\Partials\\_Navbar.cshtml",
+              "ToolTip": "C:\\Users\\C\\Desktop\\watchxanime\\Web\\watchxanime\\watchxanime.UI\\Views\\UILayout\\Partials\\_Navbar.cshtml",
+              "RelativeToolTip": "watchxanime.UI\\Views\\UILayout\\Partials\\_Navbar.cshtml",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAUwDUAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-26T16:07:34.716Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\C\\Desktop\\watchxanime\\Web\\watchxanime\\watchxanime.UI\\Views\\UILayout\\Partials\\_Login.cshtml",
+              "RelativeDocumentMoniker": "watchxanime.UI\\Views\\UILayout\\Partials\\_Login.cshtml",
+              "ToolTip": "C:\\Users\\C\\Desktop\\watchxanime\\Web\\watchxanime\\watchxanime.UI\\Views\\UILayout\\Partials\\_Login.cshtml",
+              "RelativeToolTip": "watchxanime.UI\\Views\\UILayout\\Partials\\_Login.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAuwCkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-26T16:00:21.991Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UILayoutController.cs",
+              "DocumentMoniker": "C:\\Users\\C\\Desktop\\watchxanime\\Web\\watchxanime\\watchxanime.UI\\Controllers\\UILayoutController.cs",
+              "RelativeDocumentMoniker": "watchxanime.UI\\Controllers\\UILayoutController.cs",
+              "ToolTip": "C:\\Users\\C\\Desktop\\watchxanime\\Web\\watchxanime\\watchxanime.UI\\Controllers\\UILayoutController.cs",
+              "RelativeToolTip": "watchxanime.UI\\Controllers\\UILayoutController.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-26T14:44:29.345Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\C\\Desktop\\watchxanime\\Web\\watchxanime\\watchxanime.UI\\Views\\UILayout\\Partials\\_Register.cshtml",
+              "RelativeDocumentMoniker": "watchxanime.UI\\Views\\UILayout\\Partials\\_Register.cshtml",
+              "ToolTip": "C:\\Users\\C\\Desktop\\watchxanime\\Web\\watchxanime\\watchxanime.UI\\Views\\UILayout\\Partials\\_Register.cshtml",
+              "RelativeToolTip": "watchxanime.UI\\Views\\UILayout\\Partials\\_Register.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-26T14:41:56.585Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\C\\Desktop\\watchxanime\\Web\\watchxanime\\watchxanime.UI\\Views\\UILayout\\Layout.cshtml",
+              "RelativeDocumentMoniker": "watchxanime.UI\\Views\\UILayout\\Layout.cshtml",
+              "ToolTip": "C:\\Users\\C\\Desktop\\watchxanime\\Web\\watchxanime\\watchxanime.UI\\Views\\UILayout\\Layout.cshtml",
+              "RelativeToolTip": "watchxanime.UI\\Views\\UILayout\\Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-26T14:38:07.899Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "C:\\Users\\C\\Desktop\\watchxanime\\Web\\watchxanime\\watchxanime.UI\\Views\\Shared\\Components\\_AboutComponent\\Default.cshtml",
+              "RelativeDocumentMoniker": "watchxanime.UI\\Views\\Shared\\Components\\_AboutComponent\\Default.cshtml",
+              "ToolTip": "C:\\Users\\C\\Desktop\\watchxanime\\Web\\watchxanime\\watchxanime.UI\\Views\\Shared\\Components\\_AboutComponent\\Default.cshtml",
+              "RelativeToolTip": "watchxanime.UI\\Views\\Shared\\Components\\_AboutComponent\\Default.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-26T14:32:23.159Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\C\\Desktop\\watchxanime\\Web\\watchxanime\\watchxanime.UI\\Program.cs",
+              "RelativeDocumentMoniker": "watchxanime.UI\\Program.cs",
+              "ToolTip": "C:\\Users\\C\\Desktop\\watchxanime\\Web\\watchxanime\\watchxanime.UI\\Program.cs",
+              "RelativeToolTip": "watchxanime.UI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-26T14:18:22.022Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ScaffoldingReadMe.txt",
+              "DocumentMoniker": "C:\\Users\\C\\Desktop\\watchxanime\\Web\\watchxanime\\watchxanime.UI\\ScaffoldingReadMe.txt",
+              "RelativeDocumentMoniker": "watchxanime.UI\\ScaffoldingReadMe.txt",
+              "ToolTip": "C:\\Users\\C\\Desktop\\watchxanime\\Web\\watchxanime\\watchxanime.UI\\ScaffoldingReadMe.txt",
+              "RelativeToolTip": "watchxanime.UI\\ScaffoldingReadMe.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-01-26T14:16:56.322Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\C\\Desktop\\watchxanime\\Web\\watchxanime\\watchxanime.UI\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "watchxanime.UI\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\C\\Desktop\\watchxanime\\Web\\watchxanime\\watchxanime.UI\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "watchxanime.UI\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-26T14:15:11.321Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

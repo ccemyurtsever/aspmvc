@@ -1,0 +1,38 @@
+@model CreatePrivacyPolicyDTO
+
+@{
+    ViewData["Title"] = "Yeni Gizlilik Politikası";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="p-4">
+    <div class="bg-[#1a1a1a] border border-red-900/30 rounded-lg">
+        <div class="border-b border-red-900/30 px-6 py-4">
+            <h6 class="text-sm font-bold text-gray-100">Yeni Gizlilik Politikası</h6>
+        </div>
+        <div class="p-6">
+            <form method="post">
+                <div class="mb-4">
+                    <label class="block text-[11px] font-bold text-gray-100 mb-2">Başlık</label>
+                    <input asp-for="Title" class="w-full bg-[#0f0f0f] border border-red-900/50 rounded-md px-2.5 py-1.5 text-[11px] text-gray-100 focus:outline-none focus:border-red-500" required />
+                    <span asp-validation-for="Title" class="text-sm text-red-600"></span>
+                </div>
+
+                <div class="mb-4">
+                    <label class="block text-[11px] font-bold text-gray-100 mb-2">İçerik</label>
+                    <textarea asp-for="Content" rows="5" class="w-full bg-[#0f0f0f] border border-red-900/50 rounded-md px-2.5 py-1.5 text-[11px] text-gray-100 focus:outline-none focus:border-red-500" required></textarea>
+                    <span asp-validation-for="Content" class="text-sm text-red-600"></span>
+                </div>
+
+                <div class="flex gap-2">
+                    <button type="submit" class="px-4 py-1.5 bg-red-500 hover:bg-red-600 text-[11px] text-white rounded-md transition-colors duration-200">
+                        Kaydet
+                    </button>
+                    <a asp-action="Index" class="px-4 py-1.5 bg-[#0f0f0f] hover:bg-gray-900 text-[11px] text-gray-100 rounded-md transition-colors duration-200 border border-red-900/30">
+                        İptal
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div> 
